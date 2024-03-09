@@ -27,7 +27,7 @@
 }
 
 .call{
-    background-image: url('../multimedia/living-room-8557308_1280.JPG');
+    background-image: url('../multimedia/livingroom.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -48,7 +48,7 @@
 }
 
 .imagen {
-    background-image: url('../multimedia/sillon+almohadones.JPG');
+    background-image: url('../multimedia/sillonalmohadones.jpg');
     background-size: cover;
     background-position: center;
     margin-top: 150px;
@@ -71,7 +71,7 @@ a:hover{
 }
 
 .call2{
-    background-image: url('../multimedia/mas\ sillas.JPG');
+    background-image: url('../multimedia/massillas.jpg');
     background-size:cover;
     background-position:center;
     height: 800px;
@@ -81,7 +81,7 @@ a:hover{
 }
 
 .imagen2{
-    background-image: url('../multimedia/sillas.JPG');
+    background-image: url('../multimedia/sillas.jpg');
     background-size: cover;
     background-position: center;
     margin-top: 150px;
@@ -100,7 +100,7 @@ a:hover{
 
 
 #card1{
-    background-image:url('../multimedia/mesa.JPG');
+    background-image:url('../multimedia/mesa.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -109,7 +109,7 @@ a:hover{
 }
 
 #card2{
-    background-image:url('../multimedia/macetas.JPG');
+    background-image:url('../multimedia/macetas.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -117,7 +117,7 @@ a:hover{
 }
 
 #card3{
-    background-image:url('../multimedia/accesorios.JPG');
+    background-image:url('../multimedia/accesorios.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -125,7 +125,7 @@ a:hover{
 }
 
 #card4{
-    background-image:url('../multimedia/sillon.JPG');
+    background-image:url('../multimedia/sillon.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
