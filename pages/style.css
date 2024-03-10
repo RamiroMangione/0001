@@ -167,6 +167,36 @@ a:hover{
     background-color:rgb(119, 110, 91) ;
 }
 
+.primerseccion{
+    background-color: grey;
+}
+
+.carousel{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 500px;
+    margin-bottom: 5px;
+    margin-top: 150px;
+}
+
+.galeria{
+    height: 500px;
+}
+
+.segundaseccion{
+    background-color: grey;
+}
+
+.tercerseccion{
+    background-color: grey;
+}
+
+.epigrafe{
+    color: brown;
+    text-shadow: 0 0 2px white;
+    background-color: rgba(128, 128, 128, 0.562);
+    border-radius: 10px;
+}
 
 
 @media only screen and (max-width:1006px){
