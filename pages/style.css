@@ -209,12 +209,34 @@ a:hover{
     padding: 0;
 }
 
-.main{
-    background-image:url('../multimedia/fondo3.jpg');
+.sobremi{
+    background-image:url('../multimedia/fondoabout.jpg');
     background-size: cover;
     background-position: center;
 }
 
+.parrafo{
+    margin-top: 150px;
+    background-color: rgba(222, 184, 135, 0.767);
+}
+
+.parrafo h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    color: burlywood;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+.parrafo h6{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.ig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* media querys */
 
@@ -225,12 +247,15 @@ a:hover{
     }
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
     .text h1{
         font-size: 35px;
     }
     .nav{
         height: 110px;
+    }
+    .parrafo{
+        margin-bottom: 0px;
     }
 }
 @media only screen and (max-width:710px){
