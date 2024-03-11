@@ -238,6 +238,27 @@ a:hover{
     align-items: center;
 }
 
+.contacto{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.contacto h2{
+    text-align: center;
+}
+
+.form{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.whatsapp img{
+    object-fit:contain;
+    object-position: center;
+    height: 400px;
+    width: 300px;
+}
+
 /* media querys */
 
 @media only screen and (max-width:1006px){
