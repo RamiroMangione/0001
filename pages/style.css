@@ -238,6 +238,7 @@ a:hover{
     align-items: center;
 }
 
+
 .contacto{
     margin-top: 150px;
     margin-bottom: 150px;
@@ -258,6 +259,15 @@ a:hover{
     height: 400px;
     width: 300px;
 }
+
+.maineventos{
+    background-color: burlywood;
+}
+
+.maineventos{
+    margin-top: 150px;
+}
+
 
 /* media querys */
 
