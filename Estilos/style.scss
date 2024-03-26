@@ -13,17 +13,31 @@
 
 // variables
 $margen: 150px;
+$colorNegro: black;
+$colorGris1: rgb(119, 110, 91);
+$colorMadera: burlywood;
+$colorBlanco: white;
+$imgHeight:800px;
+
+@mixin centrarimg{
+    background-size: cover;
+    background-position: center
+}
+
+@mixin border1{
+    border-radius: 10px;
+    border-style: solid;;
+}
+
 // header
 @import './secciones/header.scss';
 
 .call{
     background-image: url('../multimedia/livingroom.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 800px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
+    @include centrarimg;
+    height: $imgHeight;
+    @include border1;
+    border-color: $colorNegro;
 }
 
 .text h1{
@@ -32,19 +46,17 @@ $margen: 150px;
 
 .text{
     margin-top: $margen;
-    color: white;
+    color: $colorMadera;
     line-height: 28px;
-    text-shadow: 0px 0px 8px black;
+    text-shadow: 0px 0px 8px $colorNegro;
 }
 
 .imagen {
     background-image: url('../multimedia/sillonalmohadones.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centrarimg;
     margin-top: $margen;
     height: 400px;
-    border-radius: 10px;
-    border-style: solid;
+    @include border1;
 }
 a{
     text-decoration: none;
@@ -56,69 +68,62 @@ a{
 }
 
 a:hover{
-    background-color: black;
-    color: white;
+    background-color: $colorNegro;
+    color: $colorMadera;
 }
 
 .call2{
     background-image: url('../multimedia/massillas.jpg');
     background-size:cover;
     background-position:center;
-    height: 800px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
+    height: $imgHeight;
+    @include border1;
+    border-color: $colorNegro;
 }
 
 .imagen2{
     background-image: url('../multimedia/sillas.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centrarimg;
     margin-top: $margen;
     height: 400px;
-    border-radius: 10px;
-    border-style: solid;
+    @include border1;
 }
 
 .cards{
     margin: 0;
     border-style: solid;
-    border-color: black;
+    border-color: $colorNegro;
     text-align: center;
-    text-shadow: 0px 0px 4px black;
+    text-shadow: 0px 0px 4px $colorNegro;
 }
 
 
 #card1{
     background-image:url('../multimedia/mesa.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 800px;
+    @include centrarimg;
+    height: $imgHeight;
     margin: 0;
     
 }
 
 #card2{
     background-image:url('../multimedia/macetas.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 800px;
+    @include centrarimg;
+    height: $imgHeight;
     margin: 0;
 }
 
 #card3{
     background-image:url('../multimedia/accesorios.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 800px;
+    @include centrarimg;
+    height: $imgHeight;
     margin: 0;
 }
 
 #card4{
     background-image:url('../multimedia/sillon.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 800px;
+    @include centrarimg;
+    height: $imgHeight;
     margin: 0;
 }
 
@@ -133,7 +138,7 @@ a:hover{
 
 .footer{
     text-align: center;
-    background-color: rgb(119, 110, 91);
+    background-color: $colorGris1;
 }
 
 .pie{
@@ -154,13 +159,12 @@ a:hover{
     background: none;
 }
 .redes a{
-    background-color:rgb(119, 110, 91) ;
+    background-color:$colorGris1 ;
 }
 
 .primerseccion{
     background-image:url('../multimedia/fondo3.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centrarimg;
 }
 
 .carousel{
@@ -176,14 +180,12 @@ a:hover{
 
 .segundaseccion{
     background-image:url('../multimedia/fondo3.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centrarimg;
 }
 
 .tercerseccion{
     background-image:url('../multimedia/fondo3.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centrarimg;
 }
 
 .carousel-item img{
@@ -193,7 +195,7 @@ a:hover{
 
 .epigrafe{
     color: brown;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px $colorMadera;
     background-color: rgba(128, 128, 128, 0.562);
     border-radius: 10px;
     padding: 0;
@@ -201,8 +203,7 @@ a:hover{
 
 .sobremi{
     background-image:url('../multimedia/fondoabout.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centrarimg;
 }
 
 .parrafo{
@@ -214,7 +215,7 @@ a:hover{
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
-    color: burlywood;
+    color: $colorMadera;
     background-color: rgba(255, 255, 255, 0.719);
 }
 .parrafo h6{
@@ -251,7 +252,7 @@ a:hover{
 }
 
 .maineventos{
-    background-color: burlywood;
+    background-color: $colorMadera;
 }
 
 .maineventos{
