@@ -10,6 +10,17 @@
   margin: 0px !important;
 }
 
+@keyframes efectoimg {
+  0% {
+    width: 41.5%;
+  }
+  50% {
+    width: 35%;
+  }
+  100% {
+    width: 41, 5%;
+  }
+}
 .nav {
   background-color: rgba(128, 128, 128, 0.473);
   color: black !important;
@@ -59,6 +70,8 @@
   height: 400px;
   border-radius: 10px;
   border-style: solid;
+  animation-duration: 3s;
+  animation-name: efectoimg;
 }
 
 a {
@@ -72,7 +85,7 @@ a {
 
 a:hover {
   background-color: black;
-  color: white;
+  color: burlywood;
 }
 
 .call2 {
@@ -101,6 +114,7 @@ a:hover {
   border-color: black;
   text-align: center;
   text-shadow: 0px 0px 4px black;
+  padding: 0;
 }
 
 #card1 {
@@ -204,7 +218,7 @@ a:hover {
 
 .epigrafe {
   color: brown;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px burlywood;
   background-color: rgba(128, 128, 128, 0.562);
   border-radius: 10px;
   padding: 0;

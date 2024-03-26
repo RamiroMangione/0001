@@ -13,12 +13,18 @@
 
 // variables
 $margen: 150px;
+
 $colorNegro: black;
+
 $colorGris1: rgb(119, 110, 91);
+
 $colorMadera: burlywood;
+
 $colorBlanco: white;
+
 $imgHeight:800px;
 
+//mixins
 @mixin centrarimg{
     background-size: cover;
     background-position: center
@@ -27,6 +33,12 @@ $imgHeight:800px;
 @mixin border1{
     border-radius: 10px;
     border-style: solid;;
+}
+
+@keyframes efectoimg{
+    0%{width: 41.5%}
+    50%{width: 35%}
+    100%{width: 41,5%}
 }
 
 // header
@@ -38,6 +50,7 @@ $imgHeight:800px;
     height: $imgHeight;
     @include border1;
     border-color: $colorNegro;
+
 }
 
 .text h1{
@@ -46,7 +59,7 @@ $imgHeight:800px;
 
 .text{
     margin-top: $margen;
-    color: $colorMadera;
+    color: $colorBlanco;
     line-height: 28px;
     text-shadow: 0px 0px 8px $colorNegro;
 }
@@ -57,6 +70,8 @@ $imgHeight:800px;
     margin-top: $margen;
     height: 400px;
     @include border1;
+    animation-duration: 3s;
+    animation-name: efectoimg;
 }
 a{
     text-decoration: none;
@@ -95,6 +110,7 @@ a:hover{
     border-color: $colorNegro;
     text-align: center;
     text-shadow: 0px 0px 4px $colorNegro;
+    padding: 0;
 }
 
 
