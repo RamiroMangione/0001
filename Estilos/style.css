@@ -119,7 +119,7 @@ a:hover {
   animation: aparecer linear;
   animation-timeline: view();
   animation-range-start: cover;
-  animation-range-end: contain;
+  animation-range-end: 700px;
 }
 
 .cards {
