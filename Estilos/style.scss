@@ -41,6 +41,11 @@ $imgHeight:800px;
     100%{width: 41,5%}
 }
 
+@keyframes aparecer{
+    0%{scale: 0.7; opacity: 0;}
+    100%{scale: 1; opacity: 1}
+}
+
 // header
 @import './secciones/header.scss';
 
@@ -102,6 +107,10 @@ a:hover{
     margin-top: $margen;
     height: 400px;
     @include border1;
+    animation: aparecer linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: contain;
 }
 
 .cards{
@@ -164,7 +173,9 @@ a:hover{
 
 
 .contacto{
-    margin-top: $margen !important;
+    margin-top: 120px !important;
+    background-image: url('../multimedia/contacto.jpg');
+    height: 90vh;
 }
 
 .redes img{
@@ -210,7 +221,7 @@ a:hover{
 }
 
 .epigrafe{
-    color: brown;
+    color: $colorNegro;
     text-shadow: 0 0 5px $colorMadera;
     background-color: rgba(128, 128, 128, 0.562);
     border-radius: 10px;
@@ -218,8 +229,9 @@ a:hover{
 }
 
 .sobremi{
-    background-image:url('../multimedia/fondoabout.jpg');
+    background-image:url('../multimedia/fondoabout1.jpg');
     @include centrarimg;
+    height: 100vh;
 }
 
 .parrafo{
